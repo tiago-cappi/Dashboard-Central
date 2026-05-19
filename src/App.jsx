@@ -3,7 +3,9 @@ import { useAuth } from './lib/AuthContext.jsx';
 import AppShell from './components/layout/AppShell.jsx';
 import Overview from './pages/Overview.jsx';
 import Forestos from './pages/Forestos.jsx';
+import Financas from './pages/Financas.jsx';
 import Login from './pages/Login.jsx';
+import { FinancasProvider } from './features/financas/FinancasContext.jsx';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
@@ -31,6 +33,14 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Overview />} />
           <Route path="/forestos" element={<Forestos />} />
+          <Route
+            path="/financas"
+            element={
+              <FinancasProvider>
+                <Financas />
+              </FinancasProvider>
+            }
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AppShell>

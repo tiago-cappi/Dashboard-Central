@@ -7,6 +7,8 @@ export default function TreeToolbar({
   onExpandAll,
   onCollapseAll,
   onNewSector,
+  onOpenMultiFocus,
+  multiFocusDisabled,
   count,
 }) {
   return (
@@ -61,6 +63,18 @@ export default function TreeToolbar({
         <div className="font-eb text-[11px] text-[#7a6442]">
           {count} {count === 1 ? 'elemento' : 'elementos'}
         </div>
+      )}
+
+      {onOpenMultiFocus && (
+        <button
+          type="button"
+          className="seal sm"
+          onClick={onOpenMultiFocus}
+          disabled={multiFocusDisabled}
+          title={multiFocusDisabled ? 'Já há uma sessão de foco ativa' : 'Iniciar uma sessão de foco com várias mini-missões'}
+        >
+          🍅 sessão multi-missão
+        </button>
       )}
 
       <button type="button" className="seal sm dark" onClick={onNewSector}>

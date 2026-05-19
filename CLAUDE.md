@@ -34,3 +34,14 @@ Quando necessário, faça perguntas abertas de múltipla escolha ou de seleção
 1. Confirme que o código legado substituído foi removido.
 2. Confirme que nada fora do escopo foi alterado.
 3. Confirme que não há duplicação com código já existente.
+
+
+
+<!-- SPECKIT START -->
+
+Sempre leia o arquivo ".specify\memory\constitution.md" que contém a base e todas as regras que este projeto deve seguir em todas as etapas e implementações.
+
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan at
+`specs/002-controle-financas/plan.md` (feature: Controle de Finanças).
+<!-- SPECKIT END -->

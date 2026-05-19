@@ -4,7 +4,11 @@
       "mcp__claude_ai_Supabase__list_tables",
       "mcp__claude_ai_Supabase__execute_sql",
       "mcp__claude_ai_Supabase__list_projects",
-      "mcp__claude_ai_Supabase__apply_migration"
+      "mcp__claude_ai_Supabase__apply_migration",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\m.rafael\\\\.claude\\\\skills\\\\brainstorm-workspace\\\\eval_review.html\")",
+      "Read(//c/Users/m.rafael/.claude/skills/skill-creator/**)",
+      "Bash(python -m scripts.run_loop --help)",
+      "Bash(xargs grep -l \"focus_session\\\\|sessionXp\\\\|focus_minutes\\\\|harvested\")"
     ]
   }
 }

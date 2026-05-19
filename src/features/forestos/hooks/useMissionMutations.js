@@ -23,7 +23,7 @@ export function useMissionMutations() {
         parent_mission_id: input.parent_mission_id ?? null,
         importance: Math.max(1, Math.min(5, Number(input.importance ?? 3))),
         difficulty: Math.max(1, Math.min(5, Number(input.difficulty ?? 3))),
-        status: 'active',
+        status: 'inbox',
         harvested: false,
         focus_minutes: 0,
         xp_gained: 0,

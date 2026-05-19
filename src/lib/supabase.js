@@ -27,3 +27,4 @@ export const supabase = createClient(url ?? '', key ?? '', {
 
 export const SUPABASE_CONFIGURED = Boolean(url && key);
 export const FORESTOS_SCHEMA = schema;
+export const FINANCAS_SCHEMA = import.meta.env.VITE_FINANCAS_SCHEMA || 'financas';

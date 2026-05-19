@@ -55,7 +55,7 @@ export default function ForestTree() {
   const mutations = useTreeMutations();
   const habitMutations = useHabitMutations();
   const reminderMutations = useReminderMutations();
-  const { openFocusModal, openFocusModalForHabit, profile } = useFocus();
+  const { openFocusModal, openFocusModalForHabit, openFocusModalForMultiSession, isActive, profile } = useFocus();
   const focusMissionId = profile?.current_focus_mission_id ?? null;
   const focusHabitId = profile?.current_focus_habit_id ?? null;
 
@@ -368,6 +368,8 @@ export default function ForestTree() {
         onExpandAll={expandAll}
         onCollapseAll={collapseAll}
         onNewSector={() => setModal({ kind: MODAL_KIND.SECTOR, payload: null, defaults: null })}
+        onOpenMultiFocus={openFocusModalForMultiSession}
+        multiFocusDisabled={isActive}
         count={totalCount}
       />
 

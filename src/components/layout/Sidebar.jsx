@@ -69,7 +69,7 @@ const SVG = {
 const ITEMS = [
   { to: '/', icon: SVG.overview, label: 'Visão Geral', sub: 'panorama do gabinete' },
   { to: '/forestos', icon: SVG.tree, label: 'ForestOS', sub: 'foco · missões · hábitos', badge: 'AO VIVO' },
-  { to: '#', icon: SVG.coin, label: 'Tesouraria & Finanças', sub: 'fluxos e reservas', disabled: true },
+  { to: '/financas', icon: SVG.coin, label: 'Tesouraria & Finanças', sub: 'fluxos e reservas' },
   { to: '#', icon: SVG.people, label: 'População & RH', sub: 'quadro de colaboradores', disabled: true },
   { to: '#', icon: SVG.gear, label: 'Operações & Produção', sub: 'linhas em curso', disabled: true },
   { to: '#', icon: SVG.scales, label: 'Comércio & Mercados', sub: 'rotas e parceiros', disabled: true },
